@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+ Welcome to TESTIFY!!
+ Hello!!
+ There is a new blog '{{title}}' written by Anubhav Madhav for the {{series_name|capfirst}} Series.
+
+ {% comment %} {{content|safe |truncatechars:50}} {% endcomment %}
+ Read the full blog here: http://{{ domain }}/{{slug}}
+
+
+ {% endautoescape %}

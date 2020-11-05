@@ -1,0 +1,10 @@
+{% autoescape off %}
+
+ Welcome to TESTIFY!!
+ Hello!!
+ Thank you so much for Subscribing to my Newsletters.
+ Please confirm your email for subscription by clicking on the following link.
+
+ Confirmation Link: http://{{ domain }}{% url 'subscriber_activate' uidb64=uid token=token %} 
+
+ {% endautoescape %}
